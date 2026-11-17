@@ -67,6 +67,13 @@ so a 1M-context session at 250k/1M (25% used) shouldn't render as cozy pink.
 /statusline-for-claude-code:setup
 ```
 
+**Installed from the Claude plugin directory?** The directory listing stays at
+v1.3.1: since November 2026 it accepts plugins with hooks or scripts only from
+organizations Anthropic has verified, so newer versions can't be published
+there. To get the current version, uninstall the directory copy, install from
+this repository with the commands above, and run
+`/statusline-for-claude-code:setup` again.
+
 Claude Code doesn't let a plugin switch the status line on by itself (from a
 plugin's settings it applies only `agent` and `subagentStatusLine`), so the
 plugin needs one setup step. `/statusline-for-claude-code:setup` shows your current
